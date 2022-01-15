@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn" onclick="funca()">Haz Click Aqui para activar el promt</button>
+<p id="response"></p>
+
+<script>
+    function funca() {
+        let text;
+        let user = prompt("Ingresar Nombre: ", "Nombre");
+        if (user === null || user === "") {
+            text = "El usuario cancelo el ingreso de datos";
+        } else {
+            text = "Hola " + user + " bienvenido";
+        }
+
+        document.getElementById("response").innerText = text
+
+    }
+</script>
+
+</body>
+</html>
